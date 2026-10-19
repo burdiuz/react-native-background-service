@@ -1,0 +1,44 @@
+{
+  "name": "@actualwave/react-native-background-service",
+  "version": "0.1.0",
+  "description": "Android foreground service that keeps a React Native app process alive in the background (e.g. while it hosts local servers or sockets).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "src",
+    "android",
+    "react-native.config.js",
+    "LICENSE",
+    "CHANGELOG.md",
+    "!android/build",
+    "!**/.*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "foreground-service",
+    "background",
+    "keep-alive"
+  ],
+  "author": "Oleg Galaburda <burdiuz@gmail.com> (https://github.com/burdiuz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burdiuz/react-native-background-service.git"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "react-native": "0.83.6",
+    "typescript": "^5.9.0"
+  },
+  "sideEffects": false
+}
